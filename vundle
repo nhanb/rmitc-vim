@@ -1,0 +1,55 @@
+" vim: set filetype=vim :
+
+" Compulsory stuff
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+
+" ===========================================================================
+" NERDTREE - File manager
+" ===========================================================================
+Bundle 'scrooloose/nerdtree'
+
+nnoremap <leader>d <esc>:NERDTree<cr>
+nnoremap <leader>e :NERDTreeToggle<cr>
+
+
+" ===========================================================================
+" CTRLP - Quickly jump to files
+" ===========================================================================
+Bundle 'kien/ctrlp.vim'
+
+nnoremap <leader>o :CtrlPMixed<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
+
+
+" ===========================================================================
+" SUPERTAB - Tab-triggered compeletion
+" ===========================================================================
+Bundle 'ervandew/supertab'
+
+" Let SuperTab choose type of completion
+let g:SuperTabDefaultCompletionType = "context"
+
+
+" ===========================================================================
+" SYNTASTIC - Syntax checker
+" ===========================================================================
+Bundle 'scrooloose/syntastic'
+
+
+" ===========================================================================
+" SNIPMATE - Code snippets
+" ===========================================================================
+Bundle 'msanders/snipmate.vim'
+
+
+" ===========================================================================
+" CLANG_COMPLETE - True C/C++ code completion via clang
+" ===========================================================================
+Bundle 'Rip-Rip/clang_complete'
+
+
+filetype plugin indent on       " Compulsory
